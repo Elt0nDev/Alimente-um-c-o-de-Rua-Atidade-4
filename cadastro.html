@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro - ONG Alimente um Cão de Rua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <img src="jpg6.jpg" alt="Logo - cachorro feliz" class="logo" />
+      <div class="brand">
+        <h1>Cadastro</h1>
+        <p class="tagline">Participe e ajude nossa causa!</p>
+      </div>
+
+      <div class="access-controls" aria-hidden="false">
+        <button id="btn-light-3" class="access-btn" aria-pressed="false">🔆 Claro</button>
+        <button id="btn-dark-3" class="access-btn" aria-pressed="false">🌙 Escuro</button>
+        <button id="btn-contrast-3" class="access-btn" aria-pressed="false">⚫ Alto Contraste</button>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projetos</a></li>
+        <li><a href="cadastro.html" class="ativo">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="doacao" aria-labelledby="doacao-h">
+      <h2 id="doacao-h">Cadastro para Doações</h2>
+      <p>Se você deseja contribuir, preencha o formulário abaixo:</p>
+      <img src="Dados.png" alt="Formulário ilustrativo" />
+
+      <form id="formDoacao" aria-label="Formulário de doação">
+        <label for="nome">Nome completo</label>
+        <input id="nome" type="text" placeholder="Nome completo" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" required />
+
+        <label for="telefone">Telefone (opcional)</label>
+        <input id="telefone" type="tel" placeholder="Telefone" />
+
+        <label for="tipoDoacao">Tipo de doação</label>
+        <select id="tipoDoacao" required>
+          <option value="">Selecione o tipo de doação</option>
+          <option value="racao">Doação de ração</option>
+          <option value="financeira">Doação financeira</option>
+          <option value="voluntario">Voluntariado</option>
+        </select>
+
+        <label for="mensagem">Mensagem (opcional)</label>
+        <textarea id="mensagem" rows="4" placeholder="Mensagem"></textarea>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div>
+      <p>© <span id="ano"></span> ONG Alimente um Cão de Rua — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

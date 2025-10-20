@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos - ONG Alimente um Cão de Rua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <img src="jpg6.jpg" alt="Logo - cachorro feliz" class="logo" />
+      <div class="brand">
+        <h1>Projetos</h1>
+        <p class="tagline">Conheça nossas ações</p>
+      </div>
+
+      <div class="access-controls" aria-hidden="false">
+        <button id="btn-light-2" class="access-btn" aria-pressed="false">🔆 Claro</button>
+        <button id="btn-dark-2" class="access-btn" aria-pressed="false">🌙 Escuro</button>
+        <button id="btn-contrast-2" class="access-btn" aria-pressed="false">⚫ Alto Contraste</button>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html" class="ativo">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section aria-labelledby="acoes-h">
+      <h2 id="acoes-h">Nossas Ações</h2>
+      <article>
+        <h3>Distribuição de Ração</h3>
+        <p>Levamos ração a pontos estratégicos da cidade, com rotas semanais coordenadas.</p>
+      </article>
+
+      <article>
+        <h3>Castração e Vacinação</h3>
+        <p>Parcerias com clínicas para reduzir a população de rua e garantir saúde aos animais.</p>
+      </article>
+
+      <article>
+        <h3>Adoção Responsável</h3>
+        <p>Eventos periódicos para encontrar lares adequados para os animais resgatados.</p>
+      </article>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-h">
+      <h2 id="contato-h">Contato</h2>
+      <div class="grid">
+        <div>
+          <p><strong>Email:</strong> contato@alimenteumcaoderua.org</p>
+          <p><strong>Telefone:</strong> (11) 99999-9999</p>
+          <p><strong>Endereço:</strong> Rua Esperança, 123 - São Paulo, SP</p>
+        </div>
+        <div>
+          <h3>Envie uma mensagem</h3>
+          <form id="formContato" aria-label="Formulário de contato">
+            <label for="nomeContato">Nome</label>
+            <input id="nomeContato" type="text" required />
+
+            <label for="emailContato">Email</label>
+            <input id="emailContato" type="email" required />
+
+            <label for="mensagemContato">Mensagem</label>
+            <textarea id="mensagemContato" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div>
+      <p>© <span id="ano"></span> ONG Alimente um Cão de Rua — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
